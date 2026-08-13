@@ -108,7 +108,7 @@ Client Request (JSON)
    git clone https://github.com/andrey0000347/UserManagementService.git
    cd user-management-service
 2. Запуск PostgreSQL в Docker
-      bash
+    
 # Создать и запустить контейнер
 docker run --name postgres-db \
 -e POSTGRES_USER=api_user \
@@ -117,7 +117,7 @@ docker run --name postgres-db \
 -p 5432:5432 \
 -d postgres:15
 
-# Или использовать Docker Compose (рекомендуется)
+# Или использовать Docker Compose 
 docker-compose up -d
 3. Настройка application.yml
    spring:
@@ -136,7 +136,7 @@ dialect: org.hibernate.dialect.PostgreSQLDialect
 format_sql: true
 show_sql: true
 
-4. Сборка и запуск
+
 # Сборка проекта
 bash
 mvn clean compile
