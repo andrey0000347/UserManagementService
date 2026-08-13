@@ -1,0 +1,22 @@
+# src/test/resources/application-test.yml
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        show_sql: true
+    open-in-view: false
+
+  docker:
+    compose:
+      enabled: false
+
+logging:
+  level:
+    com.app: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.testcontainers: INFO

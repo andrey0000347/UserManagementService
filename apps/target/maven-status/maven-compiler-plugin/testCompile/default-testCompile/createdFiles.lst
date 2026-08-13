@@ -1,0 +1,3 @@
+com\app\AppsApplicationTests.class
+com\app\integration\RedisTest.class
+com\app\integration\UserServiceIntegrationTest.class

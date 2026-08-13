@@ -1,0 +1,2223 @@
+2026-08-12 22:10:03.257 - INFO - [main] - com.app.AppsApplication - Starting AppsApplication using Java 22.0.2 with PID 19888 (C:\Users\alebe\IdeaProjects\apps\target\classes started by alebe in C:\Users\alebe\IdeaProjects\apps)
+2026-08-12 22:10:03.268 - DEBUG - [main] - com.app.AppsApplication - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-08-12 22:10:03.268 - INFO - [main] - com.app.AppsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-12 22:10:03.886 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:10:03.888 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-12 22:10:04.006 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113 ms. Found 1 JPA repository interface.
+2026-08-12 22:10:04.017 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:10:04.018 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-12 22:10:04.030 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.app.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-12 22:10:04.030 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-08-12 22:10:04.556 - INFO - [main] - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-12 22:10:04.569 - INFO - [main] - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-12 22:10:04.569 - INFO - [main] - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-08-12 22:10:04.619 - INFO - [main] - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-08-12 22:10:04.619 - INFO - [main] - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1311 ms
+2026-08-12 22:10:04.695 - ERROR - [main] - o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'rateLimitFilter' defined in file [C:\Users\alebe\IdeaProjects\apps\target\classes\com\app\filter\RateLimitFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'rateLimiterService' defined in file [C:\Users\alebe\IdeaProjects\apps\target\classes\com\app\service\RateLimiterService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<java.lang.String, java.lang.Integer>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-08-12 22:10:04.714 - INFO - [main] - o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-08-12 22:10:04.721 - WARN - [main] - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-08-12 22:10:04.728 - INFO - [main] - o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-12 22:10:04.743 - ERROR - [main] - o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.app.service.RateLimiterService required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
+
+2026-08-12 22:14:37.179 - INFO - [main] - com.app.AppsApplication - Starting AppsApplication using Java 22.0.2 with PID 7956 (C:\Users\alebe\IdeaProjects\apps\target\classes started by alebe in C:\Users\alebe\IdeaProjects\apps)
+2026-08-12 22:14:37.180 - DEBUG - [main] - com.app.AppsApplication - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-08-12 22:14:37.180 - INFO - [main] - com.app.AppsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-12 22:14:37.774 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:14:37.775 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-12 22:14:37.868 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
+2026-08-12 22:14:37.877 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:14:37.877 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-12 22:14:37.887 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.app.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-12 22:14:37.887 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-08-12 22:14:38.317 - INFO - [main] - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-12 22:14:38.333 - INFO - [main] - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-12 22:14:38.333 - INFO - [main] - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-08-12 22:14:38.374 - INFO - [main] - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-08-12 22:14:38.375 - INFO - [main] - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1159 ms
+2026-08-12 22:14:38.699 - DEBUG - [main] - com.app.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-08-12 22:14:38.787 - INFO - [main] - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-12 22:14:38.838 - INFO - [main] - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-08-12 22:14:38.864 - INFO - [main] - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-12 22:14:39.051 - INFO - [main] - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-12 22:14:39.073 - INFO - [main] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-12 22:14:40.115 - ERROR - [main] - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.app.AppsApplication.main(AppsApplication.java:10)
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 50 common frames omitted
+2026-08-12 22:14:40.119 - WARN - [main] - o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.app.AppsApplication.main(AppsApplication.java:10)
+2026-08-12 22:14:40.138 - WARN - [main] - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-12 22:14:40.718 - INFO - [main] - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-12 22:14:40.731 - DEBUG - [main] - org.hibernate.SQL - 
+    drop table if exists users cascade
+2026-08-12 22:14:40.731 - INFO - [main] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-12 22:14:41.733 - ERROR - [main] - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.getIsolatedConnection(GenerationTargetToDatabase.java:60)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:112)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:79)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:377)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:253)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:244)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.app.AppsApplication.main(AppsApplication.java:10)
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 57 common frames omitted
+2026-08-12 22:14:41.736 - WARN - [main] - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08001
+2026-08-12 22:14:41.736 - ERROR - [main] - o.h.e.jdbc.spi.SqlExceptionHelper - Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+2026-08-12 22:14:41.740 - ERROR - [main] - o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.] [n/a]
+2026-08-12 22:14:41.741 - WARN - [main] - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.] [n/a]
+2026-08-12 22:14:41.751 - INFO - [main] - o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-08-12 22:14:41.760 - INFO - [main] - o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-12 22:14:41.773 - ERROR - [main] - o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.app.AppsApplication.main(AppsApplication.java:10)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 16 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.getIsolatedConnection(GenerationTargetToDatabase.java:60)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:112)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:79)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:377)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:253)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:244)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 43 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 57 common frames omitted
+2026-08-12 22:15:28.184 - INFO - [main] - com.app.AppsApplication - Starting AppsApplication using Java 22.0.2 with PID 2232 (C:\Users\alebe\IdeaProjects\apps\target\classes started by alebe in C:\Users\alebe\IdeaProjects\apps)
+2026-08-12 22:15:28.185 - DEBUG - [main] - com.app.AppsApplication - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-08-12 22:15:28.185 - INFO - [main] - com.app.AppsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-12 22:15:28.716 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:15:28.718 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-12 22:15:28.810 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
+2026-08-12 22:15:28.819 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:15:28.820 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-12 22:15:28.829 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.app.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-12 22:15:28.829 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-08-12 22:15:29.260 - INFO - [main] - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-12 22:15:29.277 - INFO - [main] - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-12 22:15:29.278 - INFO - [main] - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-08-12 22:15:29.317 - INFO - [main] - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-08-12 22:15:29.318 - INFO - [main] - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1096 ms
+2026-08-12 22:15:29.584 - DEBUG - [main] - com.app.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-08-12 22:15:29.657 - INFO - [main] - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-12 22:15:29.691 - INFO - [main] - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-08-12 22:15:29.711 - INFO - [main] - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-12 22:15:29.850 - INFO - [main] - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-12 22:15:29.865 - INFO - [main] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-12 22:15:29.984 - INFO - [main] - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1dac0784
+2026-08-12 22:15:29.985 - INFO - [main] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-12 22:15:30.013 - WARN - [main] - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-12 22:15:30.530 - INFO - [main] - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-12 22:15:30.540 - DEBUG - [main] - org.hibernate.SQL - 
+    drop table if exists users cascade
+2026-08-12 22:15:30.548 - WARN - [main] - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-08-12 22:15:30.548 - WARN - [main] - o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2026-08-12 22:15:30.555 - DEBUG - [main] - org.hibernate.SQL - 
+    create table users (
+        age integer,
+        created_at timestamp(6) not null,
+        id bigserial not null,
+        updated_at timestamp(6),
+        email varchar(255) not null unique,
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255) not null,
+        primary key (id)
+    )
+2026-08-12 22:15:30.583 - DEBUG - [main] - org.hibernate.SQL - 
+    create index idx_users_age 
+       on users (age)
+2026-08-12 22:15:30.588 - DEBUG - [main] - org.hibernate.SQL - 
+    create index idx_users_created_at 
+       on users (created_at)
+2026-08-12 22:15:30.595 - INFO - [main] - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12 22:15:30.609 - INFO - [main] - c.a.s.impl.HeavyTaskServiceImpl - === INITIALIZING TASK MAP ===
+2026-08-12 22:15:30.611 - INFO - [main] - c.a.s.impl.HeavyTaskServiceImpl - Map size: 0
+2026-08-12 22:15:30.777 - INFO - [main] - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-12 22:15:31.201 - INFO - [main] - com.app.config.AsyncConfig - Async task executor initialized: corePoolSize=5, maxPoolSize=10, queueCapacity=100
+2026-08-12 22:15:31.207 - INFO - [main] - com.app.config.AsyncConfig - Heavy task executor initialized: corePoolSize=2, maxPoolSize=5, queueCapacity=50
+2026-08-12 22:15:31.644 - INFO - [main] - o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-08-12 22:15:31.701 - INFO - [main] - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-08-12 22:15:31.708 - INFO - [main] - com.app.AppsApplication - Started AppsApplication in 3.83 seconds (process running for 4.117)
+2026-08-12 22:16:38.366 - INFO - [http-nio-8080-exec-1] - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-12 22:16:38.367 - INFO - [http-nio-8080-exec-1] - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-12 22:16:38.368 - INFO - [http-nio-8080-exec-1] - o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-08-12 22:17:05.826 - INFO - [http-nio-8080-exec-7] - com.app.controller.UserController - REST request to create user with email: test@example.com
+2026-08-12 22:17:05.834 - DEBUG - [http-nio-8080-exec-7] - c.app.service.impl.UserServiceImpl - Creating user with email: test@example.com
+2026-08-12 22:17:05.877 - DEBUG - [http-nio-8080-exec-7] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:17:05.906 - DEBUG - [http-nio-8080-exec-7] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:17:05.914 - INFO - [http-nio-8080-exec-7] - c.app.service.impl.UserServiceImpl - User created with id: 1
+2026-08-12 22:17:16.034 - INFO - [http-nio-8080-exec-6] - com.app.controller.AsyncController - REST request to process file: /data/test.csv
+2026-08-12 22:17:16.036 - INFO - [HeavyTask-1] - c.a.s.impl.HeavyTaskServiceImpl - === STARTING: processLargeDataFile ===
+2026-08-12 22:17:16.036 - INFO - [HeavyTask-1] - c.a.s.impl.HeavyTaskServiceImpl - Task ID: ba1294d5-7b49-4243-85b1-56173318a6bb
+2026-08-12 22:17:26.040 - INFO - [HeavyTask-1] - c.a.s.impl.HeavyTaskServiceImpl - Task completed: ba1294d5-7b49-4243-85b1-56173318a6bb
+2026-08-12 22:17:33.558 - INFO - [http-nio-8080-exec-3] - com.app.controller.AsyncController - REST request to get task status: taskId
+2026-08-12 22:17:33.558 - INFO - [http-nio-8080-exec-3] - c.a.s.impl.HeavyTaskServiceImpl - Getting status for task: taskId
+2026-08-12 22:17:33.558 - INFO - [http-nio-8080-exec-3] - c.a.s.impl.HeavyTaskServiceImpl - All tasks in map: [ba1294d5-7b49-4243-85b1-56173318a6bb]
+2026-08-12 22:17:33.559 - WARN - [http-nio-8080-exec-3] - c.a.s.impl.HeavyTaskServiceImpl - Task not found: taskId
+2026-08-12 22:17:54.122 - INFO - [http-nio-8080-exec-9] - com.app.controller.AsyncController - REST request to get task status: taskIde3cb4c5b-2780-4e41-97a1-02edc98ce45f
+2026-08-12 22:17:54.122 - INFO - [http-nio-8080-exec-9] - c.a.s.impl.HeavyTaskServiceImpl - Getting status for task: taskIde3cb4c5b-2780-4e41-97a1-02edc98ce45f
+2026-08-12 22:17:54.122 - INFO - [http-nio-8080-exec-9] - c.a.s.impl.HeavyTaskServiceImpl - All tasks in map: [ba1294d5-7b49-4243-85b1-56173318a6bb]
+2026-08-12 22:17:54.122 - WARN - [http-nio-8080-exec-9] - c.a.s.impl.HeavyTaskServiceImpl - Task not found: taskIde3cb4c5b-2780-4e41-97a1-02edc98ce45f
+2026-08-12 22:18:03.607 - INFO - [http-nio-8080-exec-10] - com.app.controller.AsyncController - REST request to get all tasks
+2026-08-12 22:18:03.607 - INFO - [http-nio-8080-exec-10] - com.app.controller.AsyncController - Tasks in map: [ba1294d5-7b49-4243-85b1-56173318a6bb]
+2026-08-12 22:19:04.823 - INFO - [http-nio-8080-exec-1] - com.app.controller.UserController - REST request to get user statistics
+2026-08-12 22:19:04.824 - DEBUG - [http-nio-8080-exec-1] - c.app.service.impl.UserServiceImpl - Fetching user statistics with window functions
+2026-08-12 22:19:04.863 - DEBUG - [http-nio-8080-exec-1] - org.hibernate.SQL - 
+    /* dynamic native SQL query */ SELECT
+        u.id,
+        u.email,
+        u.first_name,
+        u.last_name,
+        u.age,
+        u.created_at,
+        AVG(u.age) OVER () as avg_age,
+        PERCENT_RANK() OVER (
+    ORDER BY
+        u.age) as age_percentile,
+        NTILE(4) OVER (
+    ORDER BY
+        u.age) as age_quartile,
+        ROW_NUMBER() OVER (
+    ORDER BY
+        u.created_at) as user_number 
+    FROM
+        users u 
+    WHERE
+        u.age IS NOT NULL 
+    ORDER BY
+        u.age DESC 
+2026-08-12 22:20:10.179 - INFO - [main] - com.app.AppsApplicationTests - Starting AppsApplicationTests using Java 22.0.2 with PID 17660 (started by alebe in C:\Users\alebe\IdeaProjects\apps)
+2026-08-12 22:20:10.180 - DEBUG - [main] - com.app.AppsApplicationTests - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-08-12 22:20:10.180 - INFO - [main] - com.app.AppsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-08-12 22:20:10.904 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:20:10.905 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-12 22:20:11.024 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 1 JPA repository interface.
+2026-08-12 22:20:11.036 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:20:11.037 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-12 22:20:11.048 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.app.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-12 22:20:11.049 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-08-12 22:20:11.592 - INFO - [main] - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-12 22:20:11.641 - INFO - [main] - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-08-12 22:20:11.668 - INFO - [main] - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-12 22:20:11.866 - INFO - [main] - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-12 22:20:11.886 - INFO - [main] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-12 22:20:12.001 - INFO - [main] - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@9763e61
+2026-08-12 22:20:12.002 - INFO - [main] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-12 22:20:12.024 - WARN - [main] - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-12 22:20:12.604 - INFO - [main] - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-12 22:20:12.615 - DEBUG - [main] - org.hibernate.SQL - 
+    drop table if exists users cascade
+2026-08-12 22:20:12.630 - DEBUG - [main] - org.hibernate.SQL - 
+    create table users (
+        age integer,
+        created_at timestamp(6) not null,
+        id bigserial not null,
+        updated_at timestamp(6),
+        email varchar(255) not null unique,
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255) not null,
+        primary key (id)
+    )
+2026-08-12 22:20:12.641 - DEBUG - [main] - org.hibernate.SQL - 
+    create index idx_users_age 
+       on users (age)
+2026-08-12 22:20:12.645 - DEBUG - [main] - org.hibernate.SQL - 
+    create index idx_users_created_at 
+       on users (created_at)
+2026-08-12 22:20:12.651 - INFO - [main] - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12 22:20:12.670 - INFO - [main] - c.a.s.impl.HeavyTaskServiceImpl - === INITIALIZING TASK MAP ===
+2026-08-12 22:20:12.670 - INFO - [main] - c.a.s.impl.HeavyTaskServiceImpl - Map size: 0
+2026-08-12 22:20:12.903 - INFO - [main] - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-12 22:20:13.664 - INFO - [main] - com.app.config.AsyncConfig - Async task executor initialized: corePoolSize=5, maxPoolSize=10, queueCapacity=100
+2026-08-12 22:20:13.669 - INFO - [main] - com.app.config.AsyncConfig - Heavy task executor initialized: corePoolSize=2, maxPoolSize=5, queueCapacity=50
+2026-08-12 22:20:14.353 - INFO - [main] - o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-08-12 22:20:14.407 - INFO - [main] - com.app.AppsApplicationTests - Started AppsApplicationTests in 4.509 seconds (process running for 5.266)
+2026-08-12 22:20:14.834 - INFO - [main] - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.app.integration.RedisTest]: RedisTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-12 22:20:14.844 - INFO - [main] - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.app.AppsApplication for test class com.app.integration.RedisTest
+2026-08-12 22:20:14.876 - INFO - [main] - o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2026-08-12 22:20:14.877 - INFO - [main] - o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-08-12 22:20:15.041 - INFO - [main] - o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-08-12 22:20:15.294 - INFO - [main] - o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2026-08-12 22:20:15.295 - INFO - [main] - o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2026-08-12 22:20:15.311 - INFO - [main] - o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 28.4.0
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 15810 MB
+2026-08-12 22:20:15.430 - INFO - [main] - tc.testcontainers/ryuk:0.5.1 - Creating container for image: testcontainers/ryuk:0.5.1
+2026-08-12 22:20:15.538 - INFO - [main] - o.t.utility.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2026-08-12 22:20:15.662 - INFO - [main] - tc.testcontainers/ryuk:0.5.1 - Container testcontainers/ryuk:0.5.1 is starting: 1e78be6de380cd25b18330e5ac28a1f18d2eafe6699ea50f6c646be463529ce1
+2026-08-12 22:20:15.942 - INFO - [main] - tc.testcontainers/ryuk:0.5.1 - Container testcontainers/ryuk:0.5.1 started in PT0.5119427S
+2026-08-12 22:20:15.947 - INFO - [main] - o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2026-08-12 22:20:15.947 - INFO - [main] - o.testcontainers.DockerClientFactory - Checking the system...
+2026-08-12 22:20:15.947 - INFO - [main] - o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2026-08-12 22:20:15.948 - INFO - [main] - tc.redis:7-alpine - Creating container for image: redis:7-alpine
+2026-08-12 22:20:16.025 - INFO - [main] - tc.redis:7-alpine - Container redis:7-alpine is starting: 5df313493d0d15d449b9d915fe303591b4862ff77e889b96cc064c67775f4ffd
+2026-08-12 22:20:16.325 - INFO - [main] - tc.redis:7-alpine - Container redis:7-alpine started in PT0.3771029S
+2026-08-12 22:20:16.927 - INFO - [main] - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.app.integration.UserServiceIntegrationTest]: UserServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-12 22:20:16.935 - INFO - [main] - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.app.AppsApplication for test class com.app.integration.UserServiceIntegrationTest
+2026-08-12 22:20:16.938 - INFO - [main] - tc.postgres:15 - Creating container for image: postgres:15
+2026-08-12 22:20:16.938 - WARN - [main] - tc.postgres:15 - Reuse was requested but the environment does not support the reuse of containers
+To enable reuse of containers, you must set 'testcontainers.reuse.enable=true' in a file located at C:\Users\alebe\.testcontainers.properties
+2026-08-12 22:20:17.033 - INFO - [main] - tc.postgres:15 - Container postgres:15 is starting: b329593e40b7393a20ea90ee5def5445de8fe30aabcde5d2a68accf317652959
+2026-08-12 22:20:18.433 - INFO - [main] - tc.postgres:15 - Container postgres:15 started in PT1.4945421S
+2026-08-12 22:20:18.434 - INFO - [main] - tc.postgres:15 - Container is started (JDBC URL: jdbc:postgresql://localhost:63711/testdb?loggerLevel=OFF)
+2026-08-12 22:20:18.460 - INFO - [main] - c.a.i.UserServiceIntegrationTest - Starting UserServiceIntegrationTest using Java 22.0.2 with PID 17660 (started by alebe in C:\Users\alebe\IdeaProjects\apps)
+2026-08-12 22:20:18.460 - DEBUG - [main] - c.a.i.UserServiceIntegrationTest - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-08-12 22:20:18.460 - INFO - [main] - c.a.i.UserServiceIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-08-12 22:20:18.623 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:20:18.623 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-12 22:20:18.632 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2026-08-12 22:20:18.634 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:20:18.634 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-12 22:20:18.636 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.app.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-12 22:20:18.636 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2026-08-12 22:20:18.800 - INFO - [main] - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2026-08-12 22:20:18.809 - INFO - [main] - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-12 22:20:18.809 - INFO - [main] - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-08-12 22:20:18.854 - INFO - [main] - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-08-12 22:20:18.854 - INFO - [main] - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 392 ms
+2026-08-12 22:20:18.934 - DEBUG - [main] - com.app.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-08-12 22:20:18.974 - INFO - [main] - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-12 22:20:18.976 - INFO - [main] - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-12 22:20:18.979 - INFO - [main] - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-12 22:20:18.979 - INFO - [main] - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-08-12 22:20:18.992 - INFO - [main] - com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@41ec768e
+2026-08-12 22:20:18.992 - INFO - [main] - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-08-12 22:20:18.995 - WARN - [main] - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-12 22:20:19.022 - INFO - [main] - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-12 22:20:19.023 - DEBUG - [main] - org.hibernate.SQL - 
+    drop table if exists users cascade
+2026-08-12 22:20:19.026 - WARN - [main] - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-08-12 22:20:19.026 - WARN - [main] - o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2026-08-12 22:20:19.026 - DEBUG - [main] - org.hibernate.SQL - 
+    create table users (
+        age integer,
+        created_at timestamp(6) not null,
+        id bigserial not null,
+        updated_at timestamp(6),
+        email varchar(255) not null unique,
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255) not null,
+        primary key (id)
+    )
+2026-08-12 22:20:19.030 - DEBUG - [main] - org.hibernate.SQL - 
+    create index idx_users_age 
+       on users (age)
+2026-08-12 22:20:19.032 - DEBUG - [main] - org.hibernate.SQL - 
+    create index idx_users_created_at 
+       on users (created_at)
+2026-08-12 22:20:19.034 - INFO - [main] - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12 22:20:19.040 - INFO - [main] - c.a.s.impl.HeavyTaskServiceImpl - === INITIALIZING TASK MAP ===
+2026-08-12 22:20:19.040 - INFO - [main] - c.a.s.impl.HeavyTaskServiceImpl - Map size: 0
+2026-08-12 22:20:19.113 - INFO - [main] - com.app.config.AsyncConfig - Async task executor initialized: corePoolSize=5, maxPoolSize=10, queueCapacity=100
+2026-08-12 22:20:19.116 - INFO - [main] - com.app.config.AsyncConfig - Heavy task executor initialized: corePoolSize=2, maxPoolSize=5, queueCapacity=50
+2026-08-12 22:20:19.306 - INFO - [main] - o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-08-12 22:20:19.344 - INFO - [main] - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 63722 (http) with context path ''
+2026-08-12 22:20:19.347 - INFO - [main] - c.a.i.UserServiceIntegrationTest - Started UserServiceIntegrationTest in 0.909 seconds (process running for 10.208)
+2026-08-12 22:20:19.404 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:20:19.415 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: jane@example.com
+2026-08-12 22:20:19.426 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.443 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.452 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 1
+2026-08-12 22:20:19.458 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Fetching user by id: 1
+2026-08-12 22:20:19.463 - DEBUG - [main] - org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+2026-08-12 22:20:19.475 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:20:19.482 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.486 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: bob@example.com
+2026-08-12 22:20:19.487 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.489 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.490 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 2
+2026-08-12 22:20:19.492 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Updating user with id: 2
+2026-08-12 22:20:19.492 - DEBUG - [main] - org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+2026-08-12 22:20:19.494 - INFO - [main] - c.app.service.impl.UserServiceImpl - User updated with id: 2
+2026-08-12 22:20:19.497 - DEBUG - [main] - org.hibernate.SQL - 
+    /* update
+        for com.app.entity.UserEntity */update users 
+    set
+        age=?,
+        email=?,
+        first_name=?,
+        last_name=?,
+        password=?,
+        updated_at=? 
+    where
+        id=?
+2026-08-12 22:20:19.512 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:20:19.515 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.517 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: young@example.com
+2026-08-12 22:20:19.518 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.520 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.521 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 3
+2026-08-12 22:20:19.522 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: adult@example.com
+2026-08-12 22:20:19.523 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.525 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.525 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 4
+2026-08-12 22:20:19.526 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: middle@example.com
+2026-08-12 22:20:19.527 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.528 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.530 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 5
+2026-08-12 22:20:19.531 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: senior@example.com
+2026-08-12 22:20:19.533 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.534 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.535 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 6
+2026-08-12 22:20:19.536 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Fetching user statistics with window functions
+2026-08-12 22:20:19.572 - DEBUG - [main] - org.hibernate.SQL - 
+    /* dynamic native SQL query */ SELECT
+        u.id,
+        u.email,
+        u.first_name,
+        u.last_name,
+        u.age,
+        u.created_at,
+        AVG(u.age) OVER () as avg_age,
+        PERCENT_RANK() OVER (
+    ORDER BY
+        u.age) as age_percentile,
+        NTILE(4) OVER (
+    ORDER BY
+        u.age) as age_quartile,
+        ROW_NUMBER() OVER (
+    ORDER BY
+        u.created_at) as user_number 
+    FROM
+        users u 
+    WHERE
+        u.age IS NOT NULL 
+    ORDER BY
+        u.age DESC 
+2026-08-12 22:20:19.596 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:20:19.600 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.601 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.602 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.603 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.605 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: john@example.com
+2026-08-12 22:20:19.607 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.608 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.610 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 7
+2026-08-12 22:20:19.611 - DEBUG - [main] - org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+2026-08-12 22:20:19.618 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:20:19.621 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.623 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: user1@example.com
+2026-08-12 22:20:19.624 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.626 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.628 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 8
+2026-08-12 22:20:19.630 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: user2@example.com
+2026-08-12 22:20:19.630 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.632 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.634 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 9
+2026-08-12 22:20:19.635 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: user3@example.com
+2026-08-12 22:20:19.636 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.637 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.639 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 10
+2026-08-12 22:20:19.639 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Fetching all users
+2026-08-12 22:20:19.641 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:20:19.648 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:20:19.651 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.652 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.653 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.655 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: alice@example.com
+2026-08-12 22:20:19.656 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.658 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.659 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 11
+2026-08-12 22:20:19.668 - DEBUG - [main] - org.hibernate.SQL - 
+    /* select
+        count(*) 
+    from
+        UserEntity x */ select
+            count(*) 
+        from
+            users ue1_0
+2026-08-12 22:20:19.671 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Deleting user with id: 11
+2026-08-12 22:20:19.678 - DEBUG - [main] - org.hibernate.SQL - 
+    /* select
+        count(*) 
+    from
+        UserEntity x 
+    WHERE
+        x.id = :id */ select
+            count(*) 
+        from
+            users ue1_0 
+        where
+            ue1_0.id=?
+2026-08-12 22:20:19.680 - DEBUG - [main] - org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+2026-08-12 22:20:19.682 - INFO - [main] - c.app.service.impl.UserServiceImpl - User deleted with id: 11
+2026-08-12 22:20:19.682 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.686 - DEBUG - [main] - org.hibernate.SQL - 
+    /* select
+        count(*) 
+    from
+        UserEntity x */ select
+            count(*) 
+        from
+            users ue1_0
+2026-08-12 22:20:19.688 - DEBUG - [main] - org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+2026-08-12 22:20:19.695 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:20:19.698 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: young@example.com
+2026-08-12 22:20:19.699 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.701 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.703 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 12
+2026-08-12 22:20:19.704 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: young2@example.com
+2026-08-12 22:20:19.705 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.706 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.709 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 13
+2026-08-12 22:20:19.710 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: adult@example.com
+2026-08-12 22:20:19.711 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.713 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.714 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 14
+2026-08-12 22:20:19.715 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: middle@example.com
+2026-08-12 22:20:19.716 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.718 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.720 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 15
+2026-08-12 22:20:19.721 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: senior@example.com
+2026-08-12 22:20:19.722 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.723 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.725 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 16
+2026-08-12 22:20:19.726 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Fetching users grouped by age
+2026-08-12 22:20:19.749 - DEBUG - [main] - org.hibernate.SQL - 
+    /* SELECT
+        CASE         
+            WHEN u.age BETWEEN 0 AND 17 
+                THEN 'Minor'         
+            WHEN u.age BETWEEN 18 AND 25 
+                THEN 'Young Adult'         
+            WHEN u.age BETWEEN 26 AND 40 
+                THEN 'Adult'         
+            WHEN u.age BETWEEN 41 AND 60 
+                THEN 'Middle Age'         
+            ELSE 'Senior'     
+        END as age_group,
+        COUNT(u) as user_count,
+        AVG(u.age) as avg_age,
+        MIN(u.createdAt) as first_registration,
+        MAX(u.createdAt) as last_registration 
+    FROM
+        UserEntity u 
+    WHERE
+        u.age IS NOT NULL 
+    GROUP BY
+        CASE         
+            WHEN u.age BETWEEN 0 AND 17 
+                THEN 'Minor'         
+            WHEN u.age BETWEEN 18 AND 25 
+                THEN 'Young Adult'         
+            WHEN u.age BETWEEN 26 AND 40 
+                THEN 'Adult'         
+            WHEN u.age BETWEEN 41 AND 60 
+                THEN 'Middle Age'         
+            ELSE 'Senior'     
+        END 
+    ORDER BY
+        user_count DESC  */ select
+            case 
+                when ue1_0.age between 0 and 17 
+                    then 'Minor' 
+                when ue1_0.age between 18 and 25 
+                    then 'Young Adult' 
+                when ue1_0.age between 26 and 40 
+                    then 'Adult' 
+                when ue1_0.age between 41 and 60 
+                    then 'Middle Age' 
+                else 'Senior' 
+            end,
+            count(ue1_0.id),
+            avg(ue1_0.age),
+            min(ue1_0.created_at),
+            max(ue1_0.created_at) 
+        from
+            users ue1_0 
+        where
+            ue1_0.age is not null 
+        group by
+            case 
+                when ue1_0.age between 0 and 17 
+                    then 'Minor' 
+                when ue1_0.age between 18 and 25 
+                    then 'Young Adult' 
+                when ue1_0.age between 26 and 40 
+                    then 'Adult' 
+                when ue1_0.age between 41 and 60 
+                    then 'Middle Age' 
+                else 'Senior' 
+            end 
+        order by
+            2 desc
+2026-08-12 22:20:19.757 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:20:19.760 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.761 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.763 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.765 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.766 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:20:19.768 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: duplicate@example.com
+2026-08-12 22:20:19.769 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.771 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:20:19.773 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 17
+2026-08-12 22:20:19.775 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: duplicate@example.com
+2026-08-12 22:20:19.776 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:20:19.778 - WARN - [main] - c.app.service.impl.UserServiceImpl - User with email duplicate@example.com already exists
+2026-08-12 22:20:20.241 - INFO - [SpringApplicationShutdownHook] - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12 22:20:20.242 - DEBUG - [SpringApplicationShutdownHook] - org.hibernate.SQL - 
+    drop table if exists users cascade
+2026-08-12 22:20:20.247 - INFO - [SpringApplicationShutdownHook] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-12 22:20:20.250 - INFO - [SpringApplicationShutdownHook] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-08-12 22:20:20.256 - INFO - [SpringApplicationShutdownHook] - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12 22:20:20.256 - DEBUG - [SpringApplicationShutdownHook] - org.hibernate.SQL - 
+    drop table if exists users cascade
+2026-08-12 22:20:20.260 - WARN - [SpringApplicationShutdownHook] - c.zaxxer.hikari.pool.ProxyConnection - HikariPool-2 - Connection org.postgresql.jdbc.PgConnection@41ec768e marked as broken because of SQLSTATE(08006), ErrorCode(0)
+org.postgresql.util.PSQLException: Ошибка ввода/вывода при отправке бэкенду
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:395)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl.perform(SchemaDropperImpl.java:624)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryClosing(SessionFactoryObserverForSchemaExport.java:48)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryClosing(SessionFactoryObserverChain.java:48)
+	at org.hibernate.internal.SessionFactoryImpl.close(SessionFactoryImpl.java:908)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.invokeProxyMethod(AbstractEntityManagerFactoryBean.java:519)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean$ManagedEntityManagerFactoryInvocationHandler.invoke(AbstractEntityManagerFactoryBean.java:735)
+	at jdk.proxy2/jdk.proxy2.$Proxy137.close(Unknown Source)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:652)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1147)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.NioSocketImpl.tryRead(NioSocketImpl.java:256)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:307)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:161)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:128)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:113)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:73)
+	at org.postgresql.core.PGStream.receiveChar(PGStream.java:465)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	... 33 common frames omitted
+2026-08-12 22:20:20.264 - ERROR - [SpringApplicationShutdownHook] - o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: 
+    drop table if exists users cascade
+2026-08-12 22:20:20.265 - INFO - [SpringApplicationShutdownHook] - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-08-12 22:20:20.294 - INFO - [SpringApplicationShutdownHook] - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-08-12 22:22:24.548 - INFO - [main] - c.a.i.UserServiceIntegrationTest - Starting UserServiceIntegrationTest using Java 22.0.2 with PID 18668 (started by alebe in C:\Users\alebe\IdeaProjects\apps)
+2026-08-12 22:22:24.549 - DEBUG - [main] - c.a.i.UserServiceIntegrationTest - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-08-12 22:22:24.549 - INFO - [main] - c.a.i.UserServiceIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-08-12 22:22:25.246 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:22:25.247 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-12 22:22:25.357 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interface.
+2026-08-12 22:22:25.369 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-12 22:22:25.370 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-12 22:22:25.382 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.app.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-12 22:22:25.383 - INFO - [main] - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-08-12 22:22:25.962 - INFO - [main] - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2026-08-12 22:22:25.973 - INFO - [main] - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-12 22:22:25.974 - INFO - [main] - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-08-12 22:22:26.024 - INFO - [main] - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-08-12 22:22:26.025 - INFO - [main] - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1450 ms
+2026-08-12 22:22:26.411 - DEBUG - [main] - com.app.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-08-12 22:22:26.512 - INFO - [main] - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-12 22:22:26.579 - INFO - [main] - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-08-12 22:22:26.606 - INFO - [main] - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-12 22:22:26.763 - INFO - [main] - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-12 22:22:26.780 - INFO - [main] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-12 22:22:26.889 - INFO - [main] - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4e9d1119
+2026-08-12 22:22:26.890 - INFO - [main] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-12 22:22:26.914 - WARN - [main] - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-12 22:22:27.493 - INFO - [main] - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-12 22:22:27.504 - DEBUG - [main] - org.hibernate.SQL - 
+    drop table if exists users cascade
+2026-08-12 22:22:27.509 - WARN - [main] - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-08-12 22:22:27.509 - WARN - [main] - o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2026-08-12 22:22:27.514 - DEBUG - [main] - org.hibernate.SQL - 
+    create table users (
+        age integer,
+        created_at timestamp(6) not null,
+        id bigserial not null,
+        updated_at timestamp(6),
+        email varchar(255) not null unique,
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255) not null,
+        primary key (id)
+    )
+2026-08-12 22:22:27.518 - DEBUG - [main] - org.hibernate.SQL - 
+    create index idx_users_age 
+       on users (age)
+2026-08-12 22:22:27.520 - DEBUG - [main] - org.hibernate.SQL - 
+    create index idx_users_created_at 
+       on users (created_at)
+2026-08-12 22:22:27.524 - INFO - [main] - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12 22:22:27.540 - INFO - [main] - c.a.s.impl.HeavyTaskServiceImpl - === INITIALIZING TASK MAP ===
+2026-08-12 22:22:27.540 - INFO - [main] - c.a.s.impl.HeavyTaskServiceImpl - Map size: 0
+2026-08-12 22:22:27.725 - INFO - [main] - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-12 22:22:28.255 - INFO - [main] - com.app.config.AsyncConfig - Async task executor initialized: corePoolSize=5, maxPoolSize=10, queueCapacity=100
+2026-08-12 22:22:28.260 - INFO - [main] - com.app.config.AsyncConfig - Heavy task executor initialized: corePoolSize=2, maxPoolSize=5, queueCapacity=50
+2026-08-12 22:22:28.796 - INFO - [main] - o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-08-12 22:22:28.870 - INFO - [main] - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 51124 (http) with context path ''
+2026-08-12 22:22:28.879 - INFO - [main] - c.a.i.UserServiceIntegrationTest - Started UserServiceIntegrationTest in 4.598 seconds (process running for 7.871)
+2026-08-12 22:22:29.310 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:22:29.322 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: jane@example.com
+2026-08-12 22:22:29.334 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.350 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.357 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 1
+2026-08-12 22:22:29.362 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Fetching user by id: 1
+2026-08-12 22:22:29.367 - DEBUG - [main] - org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+2026-08-12 22:22:29.419 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:22:29.427 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.430 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: bob@example.com
+2026-08-12 22:22:29.432 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.433 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.435 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 2
+2026-08-12 22:22:29.436 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Updating user with id: 2
+2026-08-12 22:22:29.436 - DEBUG - [main] - org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+2026-08-12 22:22:29.438 - INFO - [main] - c.app.service.impl.UserServiceImpl - User updated with id: 2
+2026-08-12 22:22:29.441 - DEBUG - [main] - org.hibernate.SQL - 
+    /* update
+        for com.app.entity.UserEntity */update users 
+    set
+        age=?,
+        email=?,
+        first_name=?,
+        last_name=?,
+        password=?,
+        updated_at=? 
+    where
+        id=?
+2026-08-12 22:22:29.451 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:22:29.453 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.455 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: young@example.com
+2026-08-12 22:22:29.456 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.458 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.460 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 3
+2026-08-12 22:22:29.461 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: adult@example.com
+2026-08-12 22:22:29.462 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.463 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.465 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 4
+2026-08-12 22:22:29.466 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: middle@example.com
+2026-08-12 22:22:29.467 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.468 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.470 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 5
+2026-08-12 22:22:29.471 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: senior@example.com
+2026-08-12 22:22:29.472 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.474 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.476 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 6
+2026-08-12 22:22:29.477 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Fetching user statistics with window functions
+2026-08-12 22:22:29.517 - DEBUG - [main] - org.hibernate.SQL - 
+    /* dynamic native SQL query */ SELECT
+        u.id,
+        u.email,
+        u.first_name,
+        u.last_name,
+        u.age,
+        u.created_at,
+        AVG(u.age) OVER () as avg_age,
+        PERCENT_RANK() OVER (
+    ORDER BY
+        u.age) as age_percentile,
+        NTILE(4) OVER (
+    ORDER BY
+        u.age) as age_quartile,
+        ROW_NUMBER() OVER (
+    ORDER BY
+        u.created_at) as user_number 
+    FROM
+        users u 
+    WHERE
+        u.age IS NOT NULL 
+    ORDER BY
+        u.age DESC 
+2026-08-12 22:22:29.541 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:22:29.544 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.545 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.546 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.547 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.549 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: john@example.com
+2026-08-12 22:22:29.550 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.552 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.553 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 7
+2026-08-12 22:22:29.555 - DEBUG - [main] - org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+2026-08-12 22:22:29.562 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:22:29.564 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.567 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: user1@example.com
+2026-08-12 22:22:29.568 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.570 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.572 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 8
+2026-08-12 22:22:29.573 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: user2@example.com
+2026-08-12 22:22:29.574 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.576 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.578 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 9
+2026-08-12 22:22:29.579 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: user3@example.com
+2026-08-12 22:22:29.580 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.582 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.584 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 10
+2026-08-12 22:22:29.585 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Fetching all users
+2026-08-12 22:22:29.587 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:22:29.595 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:22:29.598 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.599 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.600 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.602 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: alice@example.com
+2026-08-12 22:22:29.603 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.605 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.606 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 11
+2026-08-12 22:22:29.614 - DEBUG - [main] - org.hibernate.SQL - 
+    /* select
+        count(*) 
+    from
+        UserEntity x */ select
+            count(*) 
+        from
+            users ue1_0
+2026-08-12 22:22:29.617 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Deleting user with id: 11
+2026-08-12 22:22:29.623 - DEBUG - [main] - org.hibernate.SQL - 
+    /* select
+        count(*) 
+    from
+        UserEntity x 
+    WHERE
+        x.id = :id */ select
+            count(*) 
+        from
+            users ue1_0 
+        where
+            ue1_0.id=?
+2026-08-12 22:22:29.625 - DEBUG - [main] - org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+2026-08-12 22:22:29.628 - INFO - [main] - c.app.service.impl.UserServiceImpl - User deleted with id: 11
+2026-08-12 22:22:29.629 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.631 - DEBUG - [main] - org.hibernate.SQL - 
+    /* select
+        count(*) 
+    from
+        UserEntity x */ select
+            count(*) 
+        from
+            users ue1_0
+2026-08-12 22:22:29.634 - DEBUG - [main] - org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+2026-08-12 22:22:29.642 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:22:29.645 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: young@example.com
+2026-08-12 22:22:29.646 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.648 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.650 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 12
+2026-08-12 22:22:29.651 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: young2@example.com
+2026-08-12 22:22:29.652 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.653 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.655 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 13
+2026-08-12 22:22:29.656 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: adult@example.com
+2026-08-12 22:22:29.657 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.659 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.662 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 14
+2026-08-12 22:22:29.664 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: middle@example.com
+2026-08-12 22:22:29.665 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.666 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.668 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 15
+2026-08-12 22:22:29.669 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: senior@example.com
+2026-08-12 22:22:29.670 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.671 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.673 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 16
+2026-08-12 22:22:29.674 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Fetching users grouped by age
+2026-08-12 22:22:29.696 - DEBUG - [main] - org.hibernate.SQL - 
+    /* SELECT
+        CASE         
+            WHEN u.age BETWEEN 0 AND 17 
+                THEN 'Minor'         
+            WHEN u.age BETWEEN 18 AND 25 
+                THEN 'Young Adult'         
+            WHEN u.age BETWEEN 26 AND 40 
+                THEN 'Adult'         
+            WHEN u.age BETWEEN 41 AND 60 
+                THEN 'Middle Age'         
+            ELSE 'Senior'     
+        END as age_group,
+        COUNT(u) as user_count,
+        AVG(u.age) as avg_age,
+        MIN(u.createdAt) as first_registration,
+        MAX(u.createdAt) as last_registration 
+    FROM
+        UserEntity u 
+    WHERE
+        u.age IS NOT NULL 
+    GROUP BY
+        CASE         
+            WHEN u.age BETWEEN 0 AND 17 
+                THEN 'Minor'         
+            WHEN u.age BETWEEN 18 AND 25 
+                THEN 'Young Adult'         
+            WHEN u.age BETWEEN 26 AND 40 
+                THEN 'Adult'         
+            WHEN u.age BETWEEN 41 AND 60 
+                THEN 'Middle Age'         
+            ELSE 'Senior'     
+        END 
+    ORDER BY
+        user_count DESC  */ select
+            case 
+                when ue1_0.age between 0 and 17 
+                    then 'Minor' 
+                when ue1_0.age between 18 and 25 
+                    then 'Young Adult' 
+                when ue1_0.age between 26 and 40 
+                    then 'Adult' 
+                when ue1_0.age between 41 and 60 
+                    then 'Middle Age' 
+                else 'Senior' 
+            end,
+            count(ue1_0.id),
+            avg(ue1_0.age),
+            min(ue1_0.created_at),
+            max(ue1_0.created_at) 
+        from
+            users ue1_0 
+        where
+            ue1_0.age is not null 
+        group by
+            case 
+                when ue1_0.age between 0 and 17 
+                    then 'Minor' 
+                when ue1_0.age between 18 and 25 
+                    then 'Young Adult' 
+                when ue1_0.age between 26 and 40 
+                    then 'Adult' 
+                when ue1_0.age between 41 and 60 
+                    then 'Middle Age' 
+                else 'Senior' 
+            end 
+        order by
+            2 desc
+2026-08-12 22:22:29.703 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id,
+        ue1_0.age,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.first_name,
+        ue1_0.last_name,
+        ue1_0.password,
+        ue1_0.updated_at 
+    from
+        users ue1_0
+2026-08-12 22:22:29.707 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.708 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.709 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.709 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.710 - DEBUG - [main] - org.hibernate.SQL - 
+    /* delete for com.app.entity.UserEntity */delete 
+    from
+        users 
+    where
+        id=?
+2026-08-12 22:22:29.712 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: duplicate@example.com
+2026-08-12 22:22:29.712 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.714 - DEBUG - [main] - org.hibernate.SQL - 
+    /* insert for
+        com.app.entity.UserEntity */insert 
+    into
+        users (age, created_at, email, first_name, last_name, password, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-08-12 22:22:29.715 - INFO - [main] - c.app.service.impl.UserServiceImpl - User created with id: 17
+2026-08-12 22:22:29.717 - DEBUG - [main] - c.app.service.impl.UserServiceImpl - Creating user with email: duplicate@example.com
+2026-08-12 22:22:29.718 - DEBUG - [main] - org.hibernate.SQL - 
+    /* <criteria> */ select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-08-12 22:22:29.720 - WARN - [main] - c.app.service.impl.UserServiceImpl - User with email duplicate@example.com already exists
+2026-08-12 22:22:30.109 - INFO - [SpringApplicationShutdownHook] - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12 22:22:30.111 - DEBUG - [SpringApplicationShutdownHook] - org.hibernate.SQL - 
+    drop table if exists users cascade
+2026-08-12 22:22:30.116 - WARN - [SpringApplicationShutdownHook] - c.zaxxer.hikari.pool.ProxyConnection - HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@4e9d1119 marked as broken because of SQLSTATE(08006), ErrorCode(0)
+org.postgresql.util.PSQLException: Ошибка ввода/вывода при отправке бэкенду
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:395)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl.perform(SchemaDropperImpl.java:624)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryClosing(SessionFactoryObserverForSchemaExport.java:48)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryClosing(SessionFactoryObserverChain.java:48)
+	at org.hibernate.internal.SessionFactoryImpl.close(SessionFactoryImpl.java:908)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.invokeProxyMethod(AbstractEntityManagerFactoryBean.java:519)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean$ManagedEntityManagerFactoryInvocationHandler.invoke(AbstractEntityManagerFactoryBean.java:735)
+	at jdk.proxy2/jdk.proxy2.$Proxy156.close(Unknown Source)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:652)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1147)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.NioSocketImpl.tryRead(NioSocketImpl.java:256)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:307)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:161)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:128)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:113)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:73)
+	at org.postgresql.core.PGStream.receiveChar(PGStream.java:465)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	... 33 common frames omitted
+2026-08-12 22:22:30.121 - ERROR - [SpringApplicationShutdownHook] - o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: 
+    drop table if exists users cascade
+2026-08-12 22:22:30.123 - INFO - [SpringApplicationShutdownHook] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-12 22:22:30.153 - INFO - [SpringApplicationShutdownHook] - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
